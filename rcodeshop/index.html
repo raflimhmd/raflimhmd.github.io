@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCODE STORE</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">🎮 Rcode Store</div>
+            <ul class="nav-menu">
+                <li><a href="#coin" class="nav-link">Coin</a></li>
+                <li><a href="#secret" class="nav-link">Secret</a></li>
+                <li><a href="#tumbal" class="nav-link">Secret Tumbal</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🐟 Welcome to Rcode Store</h1>
+            <p>Kami menyediakan semua kebutuhan memancing mu.</p>
+            <button class="btn-primary" onclick="scrollToSection('coin')">Mulai Berbelanja</button>
+        </div>
+    </section>
+
+    <!-- COIN Section -->
+    <section id="coin" class="product-section">
+        <div class="container">
+            <h2 class="section-title">💰 Coin</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"><i class="fa-solid fa-coins" style="color:#f4b400;"></i>
+</div>
+                    <h3>1M COIN</h3>
+                    <p class="price">Rp 13.000</p>
+                    <p class="description">1M Coin</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Coin 1M', 13000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><i class="fa-solid fa-coins" style="color:#f4b400;"></i></div>
+                    <h3>5M COIN</h3>
+                    <p class="price">Rp 60.000</p>
+                    <p class="description">Lebih hemat Rp 5000</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Paket 5M', 60000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><i class="fa-solid fa-coins" style="color:#f4b400;"></i></div>
+                    <h3>10M COIN</h3>
+                    <p class="price">Rp 115.000</p>
+                    <p class="description">Lebih hemat Rp 15.000</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Paket 10M', 115000)">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECRET Section -->
+    <section id="secret" class="product-section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Secret Fish</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/mega.png" height="170px" width="170px" alt=""></div>
+                    <h3>MEGALODON</h3>
+                    <p class="price">Rp 30.000</p>
+                    <p class="description">NON MUTASI</p>
+                    <button class="btn-secondary" onclick="openOrderForm('MEGALODON', 30000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/maja.png" height="170px" width="170px" alt=""></div>
+                    <h3>EL MAJA</h3>
+                    <p class="price">Rp 35.000</p>
+                    <p class="description">NON MUTASI</p>
+                    <button class="btn-secondary" onclick="openOrderForm('EL MAJA', 35000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/bonew.png" height="170px" width="170px" alt=""></div>
+                    <h3>BONE WHALE</h3>
+                    <p class="price">Rp 15.000</p>
+                    <p class="description">NON MUTASI</p>
+                    <button class="btn-secondary" onclick="openOrderForm('BONE WHALE', 15000)">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUMBAL Section -->
+    <section id="tumbal" class="product-section">
+        <div class="container">
+            <h2 class="section-title">🎣 Secret Tumbal </h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/tumbal.png" width="170px" height="170px" alt=""></div>
+                    <h3>Harga Satuan</h3>
+                    <p class="price">Rp 7.000</p>
+                    <p class="description">Random fish </p>
+                    <button class="btn-secondary" onclick="openOrderForm('Satu Ikan Tumbal', 7000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/tumbal.png" width="170px" height="170px" alt=""></div>
+                    <h3>Paket Reguler</h3>
+                    <p class="price">Rp 35.000</p>
+                    <p class="description">5 Ikan tumbal + 5 enchant stone</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Paket Reguler', 35000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/tumbal.png" width="170px" height="170px" alt=""></div>
+                    <h3>Paket Premium</h3>
+                    <p class="price">Rp 65.000</p>
+                    <p class="description">10 Ikan tumbal Lebih hemat 5k + 10 enchant stone</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Paket Premium', 65000)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="asset/img/tumbal.png" width="170px" height="170px" alt=""></div>
+                    <h3>SPECIAL OFFER</h3>
+                    <p class="price">Rp 95.000</p>
+                    <p class="description">15 ikan tumbal FREE 1 ikan tumbal lebih hemat 20k + free 25 enchant stone</p>
+                    <button class="btn-secondary" onclick="openOrderForm('Paket Spesial', 95000)">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="payment-section">
+        <div class="container">
+            <h2 class="section-title">💳 Metode Pembayaran</h2>
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <div class="payment-icon">🏦</div>
+                    <h3>Transfer Bank</h3>
+                    <p>BCA, Seabank</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">📱</div>
+                    <h3>E-Wallet</h3>
+                    <p>GoPay, Dana, Shopeepay</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">📲</div>
+                    <h3>WhatsApp</h3>
+                    <p>Tanya langsung via WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 Hubungi Kami</h2>
+            <div class="contact-content">
+                <p>Punya pertanyaan seputar produk? Hubungi kami melalui WhatsApp untuk informasi lebih lanjut!</p>
+                <button class="btn-primary" onclick="contactWhatsApp()">💬 Chat di WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderForm()">&times;</span>
+            <h2>📋 Form Pemesanan</h2>
+            <form id="orderForm" onsubmit="submitOrder(event)">
+                <div class="form-group">
+                    <label for="productName">Produk:</label>
+                    <input type="text" id="productName" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Harga:</label>
+                    <input type="text" id="price" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username Roblox:</label>
+                    <input type="text" id="username" placeholder="Masukkan username Roblox" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Nomor WhatsApp:</label>
+                    <input type="tel" id="whatsapp" placeholder="Contoh: 62812xxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah Pembelian:</label>
+                    <input type="number" id="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Metode Pembayaran:</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Pilih metode pembayaran</option>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="GoPay">GoPay</option>
+                        <option value="Shopeepay">Shopeepay</option>
+                        <option value="DANA">DANA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan:</label>
+                    <textarea id="notes" placeholder="Tulis catatan tambahan jika ada" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Kirim ke WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Rcode Store. Memenuhi segala kebutuhan anda di fish it</p>
+    </footer>
+
+    <script src="asset/script.js"></script>
+</body>
+</html>
